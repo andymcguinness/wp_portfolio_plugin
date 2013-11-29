@@ -52,10 +52,10 @@ function m3_portfolio_item_shortcode() {
 	
 	$items = get_posts( $args );
 	
-	$output = '<ul class="portfolio large-block-grid-3 small-block-grid-1">';
+	//$output = '<ul class="portfolio large-block-grid-3 small-block-grid-1">';
 	
 	foreach ($items as $item) {
-		$thumbnail =  get_the_post_thumbnail($item->ID, 'large');
+		/*$thumbnail =  get_the_post_thumbnail($item->ID, 'large');
 		$src = (string) reset(simplexml_import_dom(DOMDocument::loadHTML($thumbnail))->xpath("//img/@src"));
 		
 		$item_output = '<li>';
@@ -66,10 +66,12 @@ function m3_portfolio_item_shortcode() {
 		$item_output .= '<p>' . $item->post_title . '</p>';
 		$item_output .= '</li>';
 		
-		$output .= $item_output;
+		$output .= $item_output;*/
+		
+		$output = "One post item.";
 	}
 	
-	$output .= '</ul>';
+	//$output .= '</ul>';
 	
 	return $output;
 }

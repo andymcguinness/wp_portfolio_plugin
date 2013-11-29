@@ -57,7 +57,7 @@ function m3_portfolio_item_shortcode() {
 	
 	foreach ($items as $item) {
 		$thumbnail =  get_the_post_thumbnail($item->ID, 'large');
-		preg_match ( 'http://[^"]*', $thumbnail, $matches);
+		preg_match( 'http://[^"]*', $thumbnail, $matches);
 		
 		$src = $matches[0];
 		

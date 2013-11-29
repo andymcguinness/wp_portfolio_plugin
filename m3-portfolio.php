@@ -59,7 +59,7 @@ function m3_portfolio_item_shortcode() {
 		$src = (string) reset(simplexml_import_dom(DOMDocument::loadHTML($thumbnail))->xpath("//img/@src"));
 		
 		$item_output = '<li>';
-		$item_output .= '<a href="http://localhost/m3studios/portfolio_item/'. $item->post_name . '">';
+		$item_output .= '<a href="http://maiamcguinness/portfolio_item/'. $item->post_name . '">';
 		$item_output .= '<div class="post-circle" style="background-image:url(' . $src . ');"></div>';
 		$item_output .= '</a>';
 		$item_output .= '<br />';

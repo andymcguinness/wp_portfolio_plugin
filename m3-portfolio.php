@@ -62,7 +62,7 @@ function m3_portfolio_item_shortcode() {
 		$src = $matches[0];
 		
 		$item_output = '<li>';
-		$item_output .= '<a href="http://maiamcguinness/portfolio_item/'. $item->post_name . '">';
+		$item_output .= '<a href="http://maiamcguinness.com/portfolio_item/'. $item->post_name . '">';
 		$item_output .= '<div class="post-circle" style="background-image:url(' . $src . ');"></div>';
 		$item_output .= '</a>';
 		$item_output .= '<br />';

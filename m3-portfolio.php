@@ -54,6 +54,8 @@ function m3_portfolio_item_shortcode() {
 	
 	//$output = '<ul class="portfolio large-block-grid-3 small-block-grid-1">';
 	
+	$i = 1;
+	
 	foreach ($items as $item) {
 		/*$thumbnail =  get_the_post_thumbnail($item->ID, 'large');
 		$src = (string) reset(simplexml_import_dom(DOMDocument::loadHTML($thumbnail))->xpath("//img/@src"));
@@ -68,7 +70,9 @@ function m3_portfolio_item_shortcode() {
 		
 		$output .= $item_output;*/
 		
-		$output .= "One post item.";
+		
+		$output .= "$i post item(s).";
+		$i++;
 	}
 	
 	//$output .= '</ul>';

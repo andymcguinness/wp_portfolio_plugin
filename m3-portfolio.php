@@ -47,7 +47,8 @@ add_action( 'init', 'm3_portfolio_item_post_type' );
 
 function m3_portfolio_item_shortcode() {
 	$args = array(
-		'post_type'        => 'portfolio_item'
+		'post_type'        	=> 'portfolio_item',
+		'posts_per_page'	=> -1
 	);
 	
 	$items = get_posts( $args );

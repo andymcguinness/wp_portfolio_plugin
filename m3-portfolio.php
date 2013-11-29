@@ -3,7 +3,7 @@
 Plugin Name: m3 Portfolio
 Plugin URI: http://maiamcguinness.com/
 Description: Creates a custom post type, portfolio_item, that will contain my portfolio items; will also eventaully create a shortcode that will display my portfolio items.
-Version: 0.1
+Version: 0.2
 Author: Maia M. McGuinness
 Author URI: http://maiamcguinness.com
 License: GPLv2

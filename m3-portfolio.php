@@ -70,8 +70,7 @@ function m3_portfolio_item_shortcode() {
 		
 		$output .= $item_output;*/
 		
-		
-		$output .= "$i post item(s).";
+		$output .= "$item->post_title. $i post item(s). ";
 		$i++;
 	}
 	

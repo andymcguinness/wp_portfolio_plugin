@@ -57,10 +57,15 @@ function m3_portfolio_item_shortcode() {
 	
 	foreach ($items as $item) {
 		$thumbnail =  get_the_post_thumbnail($item->ID, 'large');
+		preg_match ( 'http://[^"]*', $thumbnail, $matches);
+		
+		$src = $matches[0];
+		
+		// http://[^"]*
 		
 		$item_output = '<li>';
 		$item_output .= '<a href="http://maiamcguinness/portfolio_item/'. $item->post_name . '">';
-		$item_output .= $thumbnail;
+		$item_output .= '<div class="post-circle" style="background-image:url(' . $src . ');"></div>';
 		$item_output .= '</a>';
 		$item_output .= '<br />';
 		$item_output .= '<p>' . $item->post_title . '</p>';

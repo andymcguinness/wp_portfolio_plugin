@@ -53,7 +53,7 @@ function m3_portfolio_item_shortcode() {
 	
 	$items = get_posts( $args );
 	
-	$output .= '<ul class="portfolio large-block-grid-3 small-block-grid-1">';
+	$output .= '<ul class="portfolio large-block-grid-3 medium-block-grid-2 small-block-grid-1">';
 	
 	foreach ($items as $item) {
 		$thumbnail =  get_the_post_thumbnail($item->ID, 'large');

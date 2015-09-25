@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: m3 Portfolio
-Plugin URI: http://maiamcguinness.com/
+Plugin URI: http://andymcguinness.com/
 Description: Creates a custom post type, portfolio_item, that will contain my portfolio items; will also eventaully create a shortcode that will display my portfolio items.
 Version: 0.2
-Author: Maia M. McGuinness
-Author URI: http://maiamcguinness.com
+Author: Andy McGuinness
+Author URI: http://andymcguinness.com
 License: GPLv2
 */
 
@@ -62,7 +62,7 @@ function m3_portfolio_item_shortcode() {
 		$src = $matches[0];
 		
 		$item_output = '<li>';
-		$item_output .= '<a href="http://maiamcguinness.com/portfolio_item/'. $item->post_name . '">';
+		$item_output .= '<a href="http://andymcguinness.com/portfolio_item/'. $item->post_name . '">';
 		$item_output .= '<div class="post-circle" style="background-image:url(' . $src . ');"></div>';
 		$item_output .= '</a>';
 		$item_output .= '<br />';
